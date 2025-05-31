@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资本做局</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="theme-color" content="#764ba2">
+</head>
+<body>
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <div class="container">
+        <div id="start-screen">
+            <div class="logo-container">
+                <i class="fas fa-chart-line logo-icon"></i>
+                <h1>资本做局</h1>
+            </div>
+            <p class="subtitle">体验资本的力量</p>
+            <button id="start-btn"><i class="fas fa-rocket"></i> 开始做局</button>
+        </div>
+        
+        <div id="loading-screen" class="hidden">
+            <h2>正在做局中<span class="dot-animation"></span></h2>
+            <div class="loading-animation">
+                <div class="spinner"></div>
+                <div class="loading-glow"></div>
+            </div>
+            <div id="loading-text">正在初始化资本系统</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <div id="result-screen" class="hidden">
+            <div class="result-icon">
+                <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h2>你被资本做局了！</h2>
+            <div class="time-container">
+                <p>你浪费了 <span id="wasted-time">0</span> 秒</p>
+                <div class="time-decoration"></div>
+            </div>
+            <div class="message">资本的游戏，你永远是韭菜</div>
+            <button id="restart-btn"><i class="fas fa-redo"></i> 再来一次</button>
+            <div class="share-container">
+                <p>分享给朋友一起被收割</p>
+                <div class="share-buttons">
+                    <i class="fab fa-weixin"></i>
+                    <i class="fab fa-weibo"></i>
+                    <i class="fab fa-qq"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
